@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Travel Guide</title>
+       
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+
+        <div id="homePage">
+            <h1>Istanbul</h1>
+            <p>Entdecke deine Lieblingsorte</p>
+            <input type="text" id="searchInput" placeholder="Stadtviertel suchen..."> <!-- Suchfeld für Stadtviertel -->
+
+            <h2>Stadtviertel</h2>
+    
+            <div class="neighborhood-container" >
+
+                <div class="neighborhood" data-name="Fatih"> <!-- data-name-Attribut für die Identifizierung des Stadtviertels für js-->
+                    <h3>Fatih</h3>
+                </div>
+                
+                <div class="neighborhood" data-name="Beşiktaş">
+                    <h3>Beşiktaş</h3>
+                </div>
+
+                <div class="neighborhood" data-name="Üsküdar">
+                    <h3>Üsküdar</h3>
+                </div>
+
+                <div class="neighborhood" data-name="Ümraniye">
+                    <h3>Ümraniye</h3>
+                </div>
+             
+                <div class="neighborhood" data-name="Kadiköy">
+                    <h3>Kadiköy</h3>
+                </div>
+
+                <div class="neighborhood" data-name="Karaköy">
+                    <h3>Karaköy</h3>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div id="neighborhoodDetails">
+
+            <button id="backButton">Zurück</button>
+
+            <h2 id="neighborhoodTitle"></h2>
+           
+
+            <div class="categories">
+                <button id="cafeButton">Cafes</button>
+                <button id="attractionButton">Sehenswürdigkeiten</button>
+                <button id="activityButton">Aktivitäten</button>
+            </div>
+
+        </div>
+
+        <div id="cafeDetails">
+
+            <button id="backButtonCafe">Zurück</button>
+
+            <h2 id="cafeTitle"></h2>
+            
+            <div id="cafeList"> <!-- Hier werden die Cafes dynamisch eingefügt mit JS -->
+            </div>
+        </div>
+
+
+            <script src="script.js"></script>
+
+    </body>
+</html>
+
+        

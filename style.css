@@ -1,0 +1,188 @@
+body{
+    background-color: #f7f3ee;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px;
+}
+
+h1{
+    font-size: 48px; 
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#searchInput{
+    width: 500px;
+    padding: 10px 30px; 
+    font-size: 18px;
+    border: 1px solid #9f8383;
+    border-radius: 8px;
+    margin-bottom: 50px;
+}
+
+.neighborhood{
+    background-color: #e6f5f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    
+    transition: transform 0.5s; 
+    cursor: pointer;
+}
+
+.neighborhood-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.neighborhood:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+#neighborhoodDetails{
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#neighborhoodTitle{
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.categories{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Zwei Spalten */
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.categories button{
+    background-color: #588eb2;
+    color: rgb(252, 248, 248);
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 30px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.categories button:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#backButton {
+    display: inline-block;
+    background: none; /* Hintergrundfarbe entfernen */
+    border: none; /* Rahmen entfernen */
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+#backButton:hover {  /* Hover-Effekt für den Zurück-Button */
+    text-decoration: underline;
+}
+
+#cafeDetails{
+    display: none;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#cafeTitle{
+    font-size: 36px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+#cafeDescription{
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+#cafeAddress{
+    font-size: 16px;
+    color: #777;
+}
+
+#backButtonCafe {
+    display: inline-block;
+    background: none; /* Hintergrundfarbe entfernen */
+    border: none; /* Rahmen entfernen */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#backButtonCafe:hover {  /* Hover-Effekt für den Zurück-Button */
+    text-decoration: underline;
+}
+
+.cafe-card{
+    background-color: #eef3f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+    transition: transform 0.5s; 
+    cursor: pointer;
+}
+
+.cafe-card h3{ /* Überschrift innerhalb der Café-Karte Titel */
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.cafe-card p{ /* Beschreibung innerhalb der Café-Karte Beschreibung und Adresse */
+    font-size: 16px;
+    line-height: 1.5; /* Zeilenhöhe für bessere Lesbarkeit */
+    color: #555;
+    margin: 0;
+}
+
+.cafe-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.cafe-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.maps-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #588eb2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.maps-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
