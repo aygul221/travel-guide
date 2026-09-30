@@ -232,9 +232,17 @@ const cafes = {
 
     ],
     "Ümraniye": [
-        { name: "Cafe C", 
-        description: "A vibrant cafe with live music.",
-        maps: "https://maps.google.com/?q=202+Maple+Ave,+Ümraniye" },
+        { name: "Mio Cesta cafe & Restaurant", 
+        description: "Süßes Cafe.  5*",
+        image: "images/mio.jpg",
+        maps: "https://share.google/RAsMLDoSow80lcYi2" },
+
+        { name: "Asker Usta", 
+        description: "Lahmacun, Kebap und mehr.  4*",
+        image: "images/usta.jpg",
+        maps: "https://share.google/gI9EEEUrhYFcEi8Vz" },
+
+
     ],
      "Beşiktaş": [
         { name: "Uji", 
