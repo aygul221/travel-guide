@@ -1,22 +1,34 @@
-body{
-    background-color: #f7f3ee;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #2c3e50;
+
+body {
+    background-color: var(--background);
+    font-family: 'Poppins', sans-serif;
+    color: var(--text);
     margin: 0;
     padding: 40px;
 }
 
+:root {
+    --background: #f8f6f2;
+    --card: #ffffff;
+    --text: #263238;
+    --blue: #6f8f9d;
+    --light-blue: #e9f0f1;
+    --grey: #737373;
+}
+
 h1{
+    font-weight: 600;
     font-size: 60px; 
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: #2c3e50;
+    letter-spacing: 2px;
+    color: var(--text);
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
 
 p{
-    font-size: 30px; 
-    color: #2c3e50;
+    font-size: 16px; 
+    color: var(--text);
+    font-weight: 400;
     text-align: center;
     margin-bottom: 50px;
 }
@@ -30,15 +42,16 @@ p{
     margin-bottom: 50px;
 }
 
-.neighborhood{
-    background-color: #e6f5f8;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 10px;
+.neighborhood {
+    background-color: var(--card);
+    border: none;
+    border-radius: 16px;
+    padding: 25px;
     text-align: center;
-    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    
-    transition: transform 0.5s; 
+
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
@@ -48,11 +61,6 @@ p{
     gap: 20px;
     max-width: 900px;
     margin: 0 auto;
-}
-
-.neighborhood:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
 }
 
 #neighborhoodDetails{
@@ -74,22 +82,23 @@ p{
     margin-bottom: 30px;
 }
 
-.categories button{
-    background-color: #588eb2;
-    color: rgb(252, 248, 248);
-    border: 1px solid #ddd;
-    border-radius: 15px;
+.categories button {
+    background-color: var(--light-blue);
+    color: var(--text);
+
+    border: none;
+    border-radius: 14px;
+
     padding: 30px 20px;
-    font-size: 18px;
-    border-radius: 5px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
-.categories button:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-}
 
 #backButton {
     display: inline-block;
@@ -100,9 +109,6 @@ p{
     margin-bottom: 30px;
 }
 
-#backButton:hover {  /* Hover-Effekt für den Zurück-Button */
-    text-decoration: underline;
-}
 
 #cafeDetails{
     display: none;
@@ -136,21 +142,19 @@ p{
     margin-top: 20px;
 }
 
-#backButtonCafe:hover {  /* Hover-Effekt für den Zurück-Button */
-    text-decoration: underline;
-}
 
-.cafe-card{
-    background-color: #eef3f4;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
-    text-align: left;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    
-    transition: transform 0.5s; 
-    cursor: pointer;
+.cafe-card {
+    background-color: var(--card);
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+
+    padding: 0;
+    margin-bottom: 30px;
+
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.07);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cafe-card h3{ /* Überschrift innerhalb der Café-Karte Titel */
@@ -167,17 +171,17 @@ p{
     margin: 0;
 }
 
-.cafe-card:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
 
-.cafe-card img{
+.cafe-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 15px;
+    display: block;
+    border-radius: 0;
+}
+
+.cafe-content {
+    padding: 22px;
 }
 
 .maps-link {
@@ -191,7 +195,57 @@ p{
     font-size: 14px;
 }
 
-.maps-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+@media (hover: hover) {
+
+    .neighborhood:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+    }
+
+    .categories button:hover {
+        background-color: var(--blue);
+        color: white;
+        transform: translateY(-3px);
+    }
+
+    .cafe-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.10);
+    }
+
+    .maps-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+}
+
+/* Anpassung für Smartphones, immer ganz unten ! */
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 42px;
+    }
+
+    #searchInput {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .neighborhood-container {
+        grid-template-columns: 1fr;
+    }
+
+    #neighborhoodDetails,
+    #cafeDetails {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
 }

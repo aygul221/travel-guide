@@ -45,11 +45,15 @@ cafeButton.addEventListener('click', function() {
         cafeCard.classList.add('cafe-card'); //fügt dem div element die klasse cafe-card hinzu
         cafeCard.innerHTML = `
         <img src="${cafe.image}" alt="${cafe.name}">
+
+            <div class="cafe-content">
             <h3>${cafe.name}</h3>
             <p>${cafe.description}</p>
         
 
             <a href="${cafe.maps}" target="_blank" class="maps-link">Auf Google Maps öffnen</a>
+
+            </div>
         `;
         cafeList.appendChild(cafeCard); //fügt das div element dem elternteil cafeList hinzu
         
