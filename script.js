@@ -12,6 +12,12 @@ const backButtonCafe = document.querySelector('#backButtonCafe');
 const cafeTitle = document.querySelector('#cafeTitle');
 const cafeList = document.querySelector('#cafeList');
 
+const activityDetails = document.querySelector('#activityDetails');
+const activityButton = document.querySelector('#activityButton');
+const backButtonActivity = document.querySelector('#backButtonActivity');
+const activityTitle = document.querySelector('#activityTitle');
+const activityList = document.querySelector('#activityList');
+
 neighborhoods.forEach(neighborhood =>{
         neighborhood.addEventListener('click', function() {
             const name = neighborhood.dataset.name;
@@ -113,7 +119,7 @@ const cafes = {
         image: "images/moda.jpg",
         maps: "https://share.google/GzmQvRm4Jg4fYxQ0Q" },
 
-         { name: "Hello Fries", 
+        { name: "Hello Fries", 
         description: "Pommes wie in Amsterdam, basic aber gut.  3*",
         image: "images/fries.jpg",
         maps: "https://share.google/oX1VrqLCC1ZhoLZXa" },
@@ -143,6 +149,31 @@ const cafes = {
         image: "images/club.jpg",
         maps: "https://share.google/K2JTyYz2PfyRXc414" },
 
+        { name: "Casnigir Lezzetcibasi Kadiköy", 
+        description: "Solche gün Tepsileri, ein Teller 380tl.  5*",
+        image: "images/cas.jpg",
+        maps: "https://share.google/yH4NpftGTIhMw2I46" },
+
+        { name: "Swievel Cafe & Bakery", 
+        description: "Diese runde Baumkuchen mit Schockolade drinne.  4*",
+        image: "images/swi.jpg",
+        maps: "https://share.google/goaZtwaartZjNbMPt" },
+
+        { name: "Valeria Coffee", 
+        description: "Creme Brulee, französische Dessserts und schöne Cafe.  4*",
+        image: "images/val.jpg",
+        maps: "https://share.google/J6Id7ssYiIfAj3mGF" },
+
+        { name: "Soho Smashburger", 
+        description: "Sehr bekannte Burgerladen.  5*",
+        image: "images/soho.jpg",
+        maps: "https://share.google/swhuMPpysd3ifXpWs" },
+
+        { name: "Halil Lahmacun", 
+        description: "Saftige Lahmacuns.  5*",
+        image: "images/halil.jpg",
+        maps: "https://share.google/yZj9xYt9XBXrwXWP3" },
+
     ],
     "Fatih": [
         { name: "Zafer Uygur Restaurant", 
@@ -159,6 +190,56 @@ const cafes = {
         description: "Direkt am Meeer, schöne Aussicht für so am Abend.  5*",
         image: "images/sarayburnu.jpg",
         maps: "https://share.google/Iv5ISLwhZhBxiVFUu" },
+
+        { name: "Özkan Köfteci", 
+        description: "Soll extrem lecker sein, ein Teller 400tl.  5*",
+        image: "images/özkan.jpg",
+        maps: "https://share.google/NxrUqWswzLWuM91La" },
+
+        { name: "Set Elsam", 
+        description: "Syrisches Essen.  4*",
+        image: "images/set.jpg",
+        maps: "https://share.google/oRvgWvEWbLinsZqEe" },
+
+        { name: "Öz Kilis Kebap & Lahmacun Restaurant", 
+        description: "Sollen einer der besten Lahmacuns haben.  5*",
+        image: "images/öz.jpg",
+        maps: "https://share.google/G2Ru9G7kePfPe4f42" },
+
+        { name: "Barbaros Yogurtcusu", 
+        description: "Yoghurt mit Honig und so, soll sehr alt und lecker sein.  3*",
+        image: "images/bar.jpg",
+        maps: "https://share.google/glijnGpRihKZlxsP1" },
+
+        { name: "Kiztas Muhallebicisi", 
+        description: "Leckere Kazandibi zum ausprobieren, 220tl.  4*",
+        image: "images/kiz.jpg",
+        maps: "https://share.google/JMVao7HeyMxCaotjC" },
+
+        { name: "Kebapci Tevfik Usta", 
+        description: "Hatay Dürüm.  4*",
+        image: "images/tev.jpg",
+        maps: "https://share.google/dc8W3ztj8IHlWkUpR" },
+
+        { name: "Gurmania Misir Casrsisi", 
+        description: "Richtig saftige Berliner.  5*",
+        image: "images/gur.jpg",
+        maps: "https://share.google/GjmbXYlwWNTEorP0f" },
+
+        { name: "Lezzeti Sark", 
+        description: "Traditionelles türkisches Essen.  4*",
+        image: "images/lez.jpg",
+        maps: "https://share.google/dr8bWmyMtMmNsqcRZ" },
+
+        { name: "Süleymaniye Cikolatacisi", 
+        description: "Cafe mit viel Schockolade und sehr schöne Umgebung.  5*",
+        image: "images/sül.jpg",
+        maps: "https://share.google/VP06wwMrYAo9Tz6wl" },
+
+        { name: "Dönerci Sahin Usta", 
+        description: "Yaprak Döner, wirklich einfach gehaltenes Dönerfleisch.  5*",
+        image: "images/sahin.jpg",
+        maps: "https://share.google/unPmNHgbqFLi2aCUI" },
 
 
     ],
@@ -228,6 +309,10 @@ const cafes = {
         image: "images/loco2.jpg",
         maps: "https://share.google/bCvMdSqGTNZcNfoDI" },
 
+        { name: "Pizza Incanto", 
+        description: "Traditionelle italienische Pizzen.  3*",
+        image: "images/incanto.jpg",
+        maps: "https://share.google/FlvoJ8r8jDLp40qfh" },
 
 
     ],
@@ -265,6 +350,11 @@ const cafes = {
         image: "images/shabby.jpg",
         maps: "https://share.google/dh4ruedMrGzHHEvoi" },
 
+        { name: "Como Bakery", 
+        description: "Italienische Desserts.  3*",
+        image: "images/como.jpg",
+        maps: "https://share.google/Q7q19LDezm18hv5dY" },
+
     ],
      "Karaköy": [
         { name: "Meshur Balikci Mehmet Usta", 
@@ -277,6 +367,11 @@ const cafes = {
         image: "images/factory.jpg",
         maps: "https://share.google/HTuE8Ty7e6yUeABrQ"},
 
+        { name: "Karaköy Sokak Dürümcüsü", 
+        description: "Sehr saftige Dürüms.  5*",
+        image: "images/sok.jpg",
+        maps: "https://share.google/nSCfJbHiTBHNyGfyg"},
+
     ],
     "Bakirköy": [
         { name: "ChuChat", 
@@ -288,6 +383,16 @@ const cafes = {
         description: "Japanische Pancake und Getränke(sehr schöne Laden diesmal).  4*",
         image: "images/puf.jpg",
         maps: "https://share.google/qQBUKWul6RvwHzMRV" }, 
+
+        { name: "Norito Kitchen", 
+        description: "Koreanische Küche von diesem Influencer.  4*",
+        image: "images/norito.jpg",
+        maps: "https://share.google/97nXUsXpAXVfXYGuT" }, 
+
+        { name: "Missvanilaa", 
+        description: "Schöne Desserts und saftige Cookies.  4*",
+        image: "images/miss.jpg",
+        maps: "https://share.google/B8fEIGKYpN1BPQ1Qt" }, 
 
     ],
 
@@ -305,10 +410,137 @@ const cafes = {
         image: "images/just.jpg",
         maps: "https://share.google/1VACfq7aCqq6dS4EW" }, 
 
+        { name: "Asia Palace - Ramen & Sushi", 
+        description: "Die haben noch vieles mehr, sieht saftig aus (Ramen ca. 250tl).  4*",
+        image: "images/asiapalace.jpg",
+        maps: "https://share.google/Y7Odb7WKgu6S0ryyn" }, 
+
+        { name: "1932 Cihangir Doyum Manti", 
+        description: "Manti.  5*",
+        image: "images/cih.jpg",
+        maps: "https://share.google/fr6IfPynKlpIXB4IV" }, 
+
+        { name: "Kizilkayalar Taksim", 
+        description: "Wet Burger.  4*",
+        image: "images/taksim.jpg",
+        maps: "https://share.google/yRiijvrzGSsH3KTCm" }, 
+
+    ],
+
+    "Sisli": [
+        { name: "Mahir Lokantasi", 
+        description: "Michelin traditionelle türkische Gerichte aber billiger.  5*",
+        image: "images/mahir.jpg",
+        maps: "https://share.google/VDgwmgoXaXwNyEizL" }, 
+
+    ],
+
+    "Beykoz": [
+        { name: "The Levant Tahinier Fisekhane", 
+        description: "Yaprak Döner sehr bekannt.  4*",
+        image: "images/bay.jpg",
+        maps: "https://share.google/ownWWqILbowcoosnw" }, 
+
+
     ],
 
 
-
-
-
 }
+
+activityButton.addEventListener('click', function() {
+
+    activityList.innerHTML = ''; //alte aktivitäten entfernen, bevor neue hinzugefügt werden
+
+    //alert('Aktivität wurde geklickt');
+    details.style.display = 'none';
+    activityDetails.style.display = 'block';
+
+    activityTitle.textContent = 'Aktivitäten in ' + title.textContent;
+
+    const selectedNeighborhood = title.textContent; //name des ausgewählten Stadtteils
+    const selectedActivityies = activities[selectedNeighborhood]; //cafes des ausgewählten Stadtteils herausnehmen 
+
+    selectedActivityies.forEach(activity => {
+        const activityCard = document.createElement('div'); //sagt html erstelle ein neues div element
+        activityCard.classList.add('activity-card'); //fügt dem div element die klasse cafe-card hinzu
+        activityCard.innerHTML = `
+        <img src="${activity.image}" alt="${activity.name}">
+
+            <div class="activity-content">
+            <h3>${activity.name}</h3>
+            <p>${activity.description}</p>
+        
+
+            <a href="${activity.maps}" target="_blank" class="maps-link">Auf Google Maps öffnen</a>
+
+            </div>
+        `;
+        activityList.appendChild(activityCard); //fügt das div element dem elternteil cafeList hinzu
+        
+    }); 
+});
+
+
+backButtonActivity.addEventListener('click', function() {
+    activityDetails.style.display = 'none';
+    details.style.display = 'block';
+});
+
+const activities = {
+    "Kadiköy": [
+        
+    ],
+
+    "Fatih": [
+        
+    ],
+
+    "Üsküdar": [
+        
+    ],
+
+    "Ümraniye": [
+        
+    ],
+
+    "Beşiktaş": [
+
+        { name: "Dolmabahce Sarayi", 
+        description: "Altes Schloss + Museum.  5*",
+        image: "images/dolma.jpg",
+        maps: "https://share.google/gKDRTi2Znk5gX6g78" }, 
+        
+    ],
+
+    "Karaköy": [
+        
+    ],
+
+    "Sirkeci": [
+        
+    ],
+
+    "Galataport": [
+        
+    ],
+
+    "Bakirköy": [
+        
+    ],
+
+    "Zeytinburnu": [
+        
+    ],
+
+    "Beyoğlu": [
+        
+    ],
+
+    "Sisli": [
+        
+    ],
+
+    "Beykoz": [
+        
+    ]
+};
