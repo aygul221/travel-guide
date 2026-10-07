@@ -184,6 +184,15 @@ p{
     padding: 22px;
 }
 
+#backButtonActivity {
+    display: inline-block;
+    background: none; /* Hintergrundfarbe entfernen */
+    border: none; /* Rahmen entfernen */
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
 .activity-card {
     background-color: var(--card);
     border: none;
