@@ -174,6 +174,12 @@ const cafes = {
         image: "images/halil.jpg",
         maps: "https://share.google/yZj9xYt9XBXrwXWP3" },
 
+        { name: "Sliceguy Pizza", 
+        description: "Saftige Brot.  5*",
+        image: "images/slice.jpg",
+        maps: "https://share.google/bELmmRF93bYXQQXdE" },
+
+
     ],
     "Fatih": [
         { name: "Zafer Uygur Restaurant", 
@@ -240,6 +246,13 @@ const cafes = {
         description: "Yaprak Döner, wirklich einfach gehaltenes Dönerfleisch.  5*",
         image: "images/sahin.jpg",
         maps: "https://share.google/unPmNHgbqFLi2aCUI" },
+
+        { name: "Tostcu Kamil", 
+        description: "Tost.  5*",
+        image: "images/kamil.jpg",
+        maps: "https://share.google/xkYRx8TskUVbzUX6e" },
+
+
 
 
     ],
@@ -355,6 +368,11 @@ const cafes = {
         image: "images/como.jpg",
         maps: "https://share.google/Q7q19LDezm18hv5dY" },
 
+        { name: "Tostcu Erol", 
+        description: "Tost.  5*",
+        image: "images/erol.jpg",
+        maps: "https://share.google/wiAsE3rBd7MOAZy1v" },
+
     ],
      "Karaköy": [
         { name: "Meshur Balikci Mehmet Usta", 
@@ -397,10 +415,16 @@ const cafes = {
     ],
 
     "Zeytinburnu": [
+        
         { name: "The Levant Tahinier Fisekhane", 
         description: "Fancy Cafe, aber bissien teuer (cay 150tl, Cappucchino 375tl, Tatilar 700tl).  4*",
         image: "images/levant.jpg",
-        maps: "https://share.google/aAQ4hZxpkg2gx6fxX" }, 
+        maps: "https://share.google/aAQ4hZxpkg2gx6fxX" },
+        
+        { name: "Jie Fisekhane", 
+        description: "Restaurant mit besonderem Konzept, asiatisches Essen (Preise: 850tl).  4*",
+        image: "images/levant.jpg",
+        maps: "https://share.google/aAQ4hZxpkg2gx6fxX" },
 
 
     ],
@@ -425,6 +449,10 @@ const cafes = {
         image: "images/taksim.jpg",
         maps: "https://share.google/yRiijvrzGSsH3KTCm" }, 
 
+        { name: "Helvetia", 
+        description: "Meze Tabaklari (400.500tl).  4*",
+        image: "images/hel.jpg",
+        maps: "https://share.google/aN04QnlUcNWTyZPdf" }, 
     ],
 
     "Sisli": [
@@ -441,8 +469,18 @@ const cafes = {
         image: "images/bay.jpg",
         maps: "https://share.google/ownWWqILbowcoosnw" }, 
 
+    ],
+
+    "Kücükcekmece": [
+        { name: "Sebit Kayseri Mutfagi", 
+        description: "Yaglama, muss ich noch mehr sagen (460tl) 5*",
+        image: "images/sebit.jpg",
+        maps: "https://share.google/glXNODXT01t8PbFXh" }, 
+
 
     ],
+
+
 
 
 }
@@ -488,14 +526,43 @@ backButtonActivity.addEventListener('click', function() {
 
 const activities = {
     "Kadiköy": [
+
+        { name: "Cilek Sokak", 
+        description: "Straße mit vielen Läden und Märkten.",
+        image: "images/cilek.jpg",
+        maps: "https://share.google/12xjbRDADlaEMc1JZ" }, 
         
     ],
 
     "Fatih": [
+
+        { name: "Topkapi Sarayi", 
+        description: "Altes Schloss + Museum.",
+        image: "images/topkapi.jpg",
+        maps: "https://share.google/GHqOG2byq7RfyX8uq" }, 
+
+        { name: "Isikli Kano", 
+        description: "Kano Nachts mit Belichtung, 20.45 Uhr.",
+        image: "images/kano.jpg",
+        maps: "https://isiklikano.com/" }, 
+
+        { name: "Boncuk Pasaji", 
+        description: "Basar mit voller Armbänder und Schmuck.",
+        image: "images/pasaj.jpg",
+        maps: "https://share.google/k3ha0FbUmuP5kPVCs" }, 
         
+        { name: "Pertevniyal Valide Sultan Cami", 
+        description: "Sehr schöne Moschee.",
+        image: "images/pvc.jpg",
+        maps: "https://share.google/s2veahi8U6XO90yZT" }, 
     ],
 
     "Üsküdar": [
+
+        { name: "Capitol Spectrum Cineplex", 
+        description: "Liegend Kinofilm gucken (Preis: 750tl)",
+        image: "images/capitol.jpg",
+        maps: "https://share.google/NaXJ5zceYrvOIVG9O" },
         
     ],
 
@@ -506,9 +573,35 @@ const activities = {
     "Beşiktaş": [
 
         { name: "Dolmabahce Sarayi", 
-        description: "Altes Schloss + Museum.  5*",
+        description: "Altes Schloss + Museum.",
         image: "images/dolma.jpg",
         maps: "https://share.google/gKDRTi2Znk5gX6g78" }, 
+
+        { name: "Feriye acik hava Sinemalari (12.10)", 
+        description: "Open-Air-Kino mit Blick auf den Bosporus. Tickets über Biletial. Eat Pray Love (Komedie/Romanze).",
+        image: "images/feriye.jpg",
+        maps: "https://biletinial.com/tr-tr/etkinlikleri/feriye-acik-hava-sinemalari" }, 
+
+        { name: "Lifestudio Besiktas", 
+        description: "Studio für koreanische FotoBoots(Passfotos).",
+        image: "images/life.jpg",
+        maps: "https://share.google/I5tJjRNT7fzjiXDym" }, 
+
+        { name: "Assk Kahve", 
+        description: "Verstecktes Cafe direkt am Meer.",
+        image: "images/assk.jpg",
+        maps: "https://share.google/sJa5BJbZ6dDgz23zJ" }, 
+
+        { name: "Kedi Müzesi", 
+        description: "Katzenmuseum mit Beleuchtung.",
+        image: "images/kedi.jpg",
+        maps: "https://share.google/615cA5CmHDYtxsq11" },
+
+        { name: "Cave Game Zone", 
+        description: "Interaktiver Bereich mit riesigem, beleuchtetem Boden.",
+        image: "images/cave.jpg",
+        maps: "https://share.google/5QTjZiAt8QMpkBki0"},
+
         
     ],
 
@@ -521,10 +614,20 @@ const activities = {
     ],
 
     "Galataport": [
+
+        { name: "Galataport Deniz Dolmus", 
+        description: "Kleine Fähre mit Aussicht(Verbindungen: 1. Bebek-Ortaköy-Galataport 2. Kadiköy-Üsküdar-Galataport Preis: 250tl).",
+        image: "images/dolmus.jpg",
+        maps: "https://galataport.com/en/getting-here/sea-shuttle" }, 
         
     ],
 
     "Bakirköy": [
+
+        { name: "Ata Beach", 
+        description: "Restaurant direkt am Meer. Schöne Atmophäre, aber Hygiene und Geschmack müssen noch verbessert werden",
+        image: "images/ata.jpg",
+        maps: "https://share.google/AOqq1I4KDRmqk411K" },
         
     ],
 
@@ -542,5 +645,32 @@ const activities = {
 
     "Beykoz": [
         
-    ]
+    ],
+
+    "Sariyer": [
+
+        { name: "SoTepe", 
+        description: "Aussichtspunkt mit Blick auf die Brücke, Picknickplätzen, Cafes und einer Zipline (Eintritt frei). Preise: Heiß-/Kaltgetränke 160-250tl, Sandwiches 180-230tl",
+        image: "images/sotepe.jpg",
+        maps: "https://share.google/A3NtsLwPc1pB1hqfK" },
+        
+    ],
+
+    "Bahcelievler": [
+
+        { name: "Saym Coffee", 
+        description: "Cafe im Höhlenkonzept mit Zwergziegen und kostenlosen Brettspielen",
+        image: "images/saym.jpg",
+        maps: "https://share.google/xjg15SXEqgYx91rZF" },
+        
+    ],
+
+    "Sancaktepe": [
+
+        { name: "Sultanbeyli Nefes Orman Dag Kizagi", 
+        description: "Diese Fahrding auf dem Gleis im Wald, sieht richtig cool aus. (Preis: 500tl)",
+        image: "images/dag.jpg",
+        maps: "https://etkinlik.nefesorman.com/" },
+        
+    ],
 };
